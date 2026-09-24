@@ -1,4 +1,3 @@
-# Lidbema AB — Rova-yta
+# Lidbema AB
 
-Svart kärna. Ember. Is.
-Kontakt: lidbema@gmail.com · 0670-101 10
+Verkstadssajt. Logga efter 2014-locken: skiftnyckel + telefon.
