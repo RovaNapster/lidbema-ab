@@ -1,2 +1,3 @@
-# lidbema-ab
-Webbplats för Lidbema AB — maskinreparation och svets i Strömsund
+# Lidbema AB
+
+Verkstadssajt. Logga efter 2014-locken: skiftnyckel + telefon.
