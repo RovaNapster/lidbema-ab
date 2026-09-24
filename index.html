@@ -42,11 +42,7 @@ body { background-color: theme('colors.lidbema.bg'); color: theme('colors.lidbem
     repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 8px);
 }
 *:focus-visible { outline: 2px solid theme('colors.lidbema.accent'); outline-offset: 2px; }
-input, textarea {
-  background: theme('colors.lidbema.bg');
-  border: 1px solid theme('colors.lidbema.border');
-  color: white;
-}
+input, textarea { background: theme('colors.lidbema.bg'); border: 1px solid theme('colors.lidbema.border'); color: white; }
 input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outline: none; }
 </style>
 </head>
@@ -54,16 +50,8 @@ input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outl
 <a href="#innehall" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-lidbema-accent text-black px-4 py-2 z-50 font-bold">Hoppa till innehåll</a>
 <header class="fixed top-0 w-full z-40 bg-lidbema-bg/90 backdrop-blur-md border-b border-lidbema-border">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-3 group" aria-label="Lidbema AB, startsida">
-      <svg viewBox="0 0 40 40" width="36" height="36" class="text-lidbema-accent group-hover:text-white transition-colors duration-300">
-        <rect x="2" y="2" width="36" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
-        <path d="M10 28 L16 12 H20 L14 28 Z" fill="currentColor" />
-        <path d="M22 12 H30 V16 H26 V28 H22 Z" fill="currentColor" />
-      </svg>
-      <div class="flex flex-col leading-none">
-        <span class="font-display font-bold text-xl tracking-wider text-white">LIDBEMA</span>
-        <span class="text-[10px] uppercase tracking-widest text-lidbema-muted">AB · Strömsund</span>
-      </div>
+    <a href="#top" class="flex items-center shrink-0" aria-label="Lidbema AB, startsida">
+      <img src="logo.svg" alt="Lidbema AB" width="260" height="88" class="h-16 w-auto" />
     </a>
     <nav class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide uppercase">
       <a href="#tjanster" class="text-lidbema-muted hover:text-white transition-colors">Tjänster</a>
@@ -71,9 +59,7 @@ input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outl
       <a href="#kontakt" class="text-lidbema-muted hover:text-white transition-colors">Kontakt</a>
       <button data-open-modal class="bg-lidbema-accent hover:bg-lidbema-accentHover text-black px-5 py-2.5 rounded-sm font-bold">Skicka förfrågan</button>
     </nav>
-    <button id="mobile-menu-btn" class="md:hidden text-lidbema-text p-2 min-h-11 min-w-11" aria-expanded="false" aria-controls="mobile-menu" aria-label="Öppna menyn">
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-    </button>
+    <button id="mobile-menu-btn" class="md:hidden text-lidbema-text p-2 min-h-11 min-w-11" aria-expanded="false" aria-controls="mobile-menu" aria-label="Öppna menyn">Meny</button>
   </div>
   <div id="mobile-menu" class="hidden md:hidden bg-lidbema-panel border-b border-lidbema-border p-4 flex flex-col gap-4 font-display text-lg uppercase tracking-wider">
     <a href="#tjanster" class="mobile-link text-lidbema-muted hover:text-white">Tjänster</a>
@@ -100,13 +86,9 @@ input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outl
       </dl>
     </div>
     <aside class="bg-lidbema-panel border border-lidbema-border p-8 rounded-lg relative">
+      <img src="logo.svg" alt="" class="h-16 w-auto mb-6" />
       <p class="text-xs uppercase tracking-widest text-lidbema-muted font-bold mb-2">Verkstad</p>
       <h2 class="font-display text-3xl font-bold text-white mb-6 uppercase">Stål, svets och maskin-el</h2>
-      <ul class="space-y-4 text-lidbema-text mb-8">
-        <li>Reparation av skogs- och lantbruksmaskiner</li>
-        <li>Svets- och smideskonstruktioner</li>
-        <li>Felsökning, reservdelar och elkomponenter</li>
-      </ul>
       <p class="text-sm text-lidbema-muted">Ring före besök så att vi kan ta emot maskinen på rätt sätt.</p>
     </aside>
   </div>
@@ -118,10 +100,10 @@ input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outl
       <h2 class="font-display font-bold text-4xl lg:text-5xl text-white uppercase">Fyra linjer. Ett golv.</h2>
     </header>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><span class="text-4xl font-display font-bold text-lidbema-border block mb-4">01</span><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Maskinreparation</h3><p class="text-lidbema-muted">Service och reparation av entreprenadmaskiner för skog och jordbruk.</p></div>
-      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><span class="text-4xl font-display font-bold text-lidbema-border block mb-4">02</span><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Svets och smide</h3><p class="text-lidbema-muted">Konstruktioner, lagningar och anpassningar i stål.</p></div>
-      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><span class="text-4xl font-display font-bold text-lidbema-border block mb-4">03</span><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">El och komponenter</h3><p class="text-lidbema-muted">Reläer, don, säkringar, lister och kablage.</p></div>
-      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><span class="text-4xl font-display font-bold text-lidbema-border block mb-4">04</span><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Reservdelar och handel</h3><p class="text-lidbema-muted">Partihandel och inköp mot specifikt uppdrag.</p></div>
+      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Maskinreparation</h3><p class="text-lidbema-muted">Service och reparation av entreprenadmaskiner för skog och jordbruk.</p></div>
+      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Svets och smide</h3><p class="text-lidbema-muted">Konstruktioner, lagningar och anpassningar i stål.</p></div>
+      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">El och komponenter</h3><p class="text-lidbema-muted">Reläer, don, säkringar, lister och kablage.</p></div>
+      <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg"><h3 class="text-2xl font-display font-bold text-white uppercase mb-3">Reservdelar och handel</h3><p class="text-lidbema-muted">Partihandel och inköp mot specifikt uppdrag.</p></div>
     </div>
   </div>
 </section>
@@ -130,67 +112,44 @@ input:focus, textarea:focus { border-color: theme('colors.lidbema.accent'); outl
     <div>
       <p class="text-lidbema-accent font-bold uppercase tracking-widest text-sm mb-2">Om Lidbema</p>
       <h2 class="font-display font-bold text-4xl lg:text-5xl text-white uppercase mb-6">En verkstad byggd för maskiner som arbetar.</h2>
-      <p class="text-lidbema-text text-lg mb-4">Bolaget registrerades 2014 och ligger på Industrivägen i Strömsund. Service, reparation och metallarbete.</p>
-      <p class="text-lidbema-muted">Registrerat för F-skatt, moms och som arbetsgivare.</p>
+      <p class="text-lidbema-text text-lg mb-4">Bolaget registrerades 2014 och ligger på Industrivägen i Strömsund.</p>
     </div>
     <div class="bg-lidbema-bg border border-lidbema-border p-8 rounded-lg">
       <p class="text-xs uppercase tracking-widest text-lidbema-muted font-bold mb-1">Besöksadress</p>
       <p class="text-xl text-white mb-6">Industrivägen 2<br />833 35 Strömsund</p>
       <p class="text-xs uppercase tracking-widest text-lidbema-muted font-bold mb-1">Direktkontakt</p>
       <p class="text-xl text-white mb-6"><a href="tel:+4667010110" class="hover:text-lidbema-accent">0670-101 10</a><br /><a href="mailto:lidbema@gmail.com" class="hover:text-lidbema-accent">lidbema@gmail.com</a></p>
-      <p class="text-xs uppercase tracking-widest text-lidbema-muted font-bold mb-1">Momsnr</p>
-      <p class="text-lg text-white">SE556978516401</p>
     </div>
   </div>
 </section>
 <section id="kontakt" class="py-20 lg:py-32 border-t border-lidbema-border bg-lidbema-panel">
   <div class="max-w-4xl mx-auto px-4 text-center">
-    <p class="text-lidbema-accent font-bold uppercase tracking-widest text-sm mb-2">Ta kontakt</p>
     <h2 class="font-display font-bold text-4xl lg:text-5xl text-white uppercase mb-6">Berätta vad som stått still.</h2>
-    <p class="text-lg text-lidbema-muted mb-10">Maskin, fel och hur bråttom. Vi återkommer på telefon eller mejl.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="tel:+4667010110" class="bg-white hover:bg-gray-200 text-black font-bold py-4 px-8 rounded-sm text-lg">Ring verkstaden</a>
-      <button data-open-modal class="bg-lidbema-accent hover:bg-lidbema-accentHover text-black font-bold py-4 px-8 rounded-sm text-lg">Öppna förfrågan</button>
+      <a href="tel:+4667010110" class="bg-white text-black font-bold py-4 px-8 rounded-sm text-lg">Ring verkstaden</a>
+      <button data-open-modal class="bg-lidbema-accent text-black font-bold py-4 px-8 rounded-sm text-lg">Öppna förfrågan</button>
     </div>
-    <a href="https://maps.google.com/?q=Industriv%C3%A4gen+2,+833+35+Str%C3%B6msund" target="_blank" rel="noopener noreferrer" class="mt-12 inline-block text-lidbema-muted hover:text-lidbema-accent">Öppna karta i Google Maps</a>
   </div>
 </section>
 </main>
 <footer class="bg-lidbema-bg border-t border-lidbema-border py-12 text-center text-sm text-lidbema-muted">
+  <img src="logo.svg" alt="" class="h-16 w-auto mx-auto mb-6" />
   <p class="mb-2"><strong class="text-white">Lidbema AB</strong> · Org.nr 556978-5164</p>
-  <p class="mb-6">Industrivägen 2, 833 35 Strömsund · 0670-101 10</p>
   <p>© <span id="year"></span> Lidbema AB</p>
 </footer>
 <div class="modal-root hidden fixed inset-0 z-50 flex items-center justify-center p-4">
-  <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" data-close-modal></div>
-  <div class="modal relative bg-lidbema-panel border border-lidbema-border w-full max-w-lg rounded-lg" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
-    <div class="flex justify-between items-center p-6 border-b border-lidbema-border bg-lidbema-bg">
+  <div class="absolute inset-0 bg-black/80" data-close-modal></div>
+  <div class="modal relative bg-lidbema-panel border border-lidbema-border w-full max-w-lg rounded-lg" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="flex justify-between items-center p-6 border-b border-lidbema-border">
       <h2 id="modal-title" class="font-display text-2xl font-bold text-white uppercase">Förfrågan</h2>
-      <button type="button" data-close-modal class="text-lidbema-muted hover:text-white min-h-11 min-w-11" aria-label="Stäng">×</button>
+      <button type="button" data-close-modal class="min-h-11 min-w-11 text-white" aria-label="Stäng">×</button>
     </div>
-    <div class="p-6">
-      <p id="modal-desc" class="text-sm text-lidbema-muted mb-6">Öppnar e-post till lidbema@gmail.com.</p>
-      <form id="forfragan-form" class="space-y-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label for="frm-namn" class="block text-xs font-bold text-lidbema-muted uppercase tracking-wider mb-2">Namn *</label>
-            <input id="frm-namn" name="namn" type="text" required class="w-full px-4 py-3 rounded-sm" />
-          </div>
-          <div>
-            <label for="frm-tel" class="block text-xs font-bold text-lidbema-muted uppercase tracking-wider mb-2">Telefon *</label>
-            <input id="frm-tel" name="telefon" type="tel" required class="w-full px-4 py-3 rounded-sm" />
-          </div>
-        </div>
-        <div>
-          <label for="frm-msg" class="block text-xs font-bold text-lidbema-muted uppercase tracking-wider mb-2">Maskin / Uppdrag *</label>
-          <textarea id="frm-msg" name="meddelande" rows="4" required class="w-full px-4 py-3 rounded-sm resize-none"></textarea>
-        </div>
-        <div class="pt-4 flex flex-col sm:flex-row gap-3">
-          <button type="submit" class="flex-1 bg-lidbema-accent hover:bg-lidbema-accentHover text-black font-bold py-3 px-6 rounded-sm">Öppna e-post</button>
-          <button type="button" data-close-modal class="flex-1 border border-lidbema-border text-white font-bold py-3 px-6 rounded-sm">Avbryt</button>
-        </div>
-      </form>
-    </div>
+    <form id="forfragan-form" class="p-6 space-y-4">
+      <label for="frm-namn" class="block text-xs font-bold text-lidbema-muted uppercase mb-2">Namn *<input id="frm-namn" name="namn" required class="mt-2 w-full px-4 py-3 rounded-sm" /></label>
+      <label for="frm-tel" class="block text-xs font-bold text-lidbema-muted uppercase mb-2">Telefon *<input id="frm-tel" name="telefon" required class="mt-2 w-full px-4 py-3 rounded-sm" /></label>
+      <label for="frm-msg" class="block text-xs font-bold text-lidbema-muted uppercase mb-2">Maskin / uppdrag *<textarea id="frm-msg" name="meddelande" rows="4" required class="mt-2 w-full px-4 py-3 rounded-sm"></textarea></label>
+      <div class="flex gap-3"><button type="submit" class="flex-1 bg-lidbema-accent text-black font-bold py-3">Öppna e-post</button><button type="button" data-close-modal class="flex-1 border border-lidbema-border text-white font-bold py-3">Avbryt</button></div>
+    </form>
   </div>
 </div>
 <script>
@@ -200,71 +159,31 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', () => {
   const open = mobileMenu.classList.toggle('hidden') === false;
   menuBtn.setAttribute('aria-expanded', String(open));
-  menuBtn.setAttribute('aria-label', open ? 'Stäng menyn' : 'Öppna menyn');
-});
-document.querySelectorAll('.mobile-link').forEach((link) => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
-    menuBtn.setAttribute('aria-expanded', 'false');
-  });
 });
 const modalRoot = document.querySelector('.modal-root');
 const dialog = modalRoot.querySelector('.modal');
-const main = document.getElementById('innehall');
-const header = document.querySelector('header');
-const footer = document.querySelector('footer');
-const form = document.getElementById('forfragan-form');
-const focusableSelector = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
 let lastTrigger = null;
-function getFocusable() {
-  return [...dialog.querySelectorAll(focusableSelector)].filter((el) => el.offsetParent !== null);
-}
-function setInert(on) {
-  [main, header, footer].forEach((node) => {
-    if (!node) return;
-    node.inert = on;
-    node.setAttribute('aria-hidden', String(on));
-  });
-}
-function openModal(trigger) {
-  lastTrigger = trigger || document.activeElement;
-  modalRoot.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  setInert(true);
-  window.requestAnimationFrame(() => document.getElementById('frm-namn').focus());
-}
-function closeModal() {
-  modalRoot.classList.add('hidden');
-  document.body.style.overflow = '';
-  setInert(false);
-  lastTrigger?.focus();
-}
-document.querySelectorAll('[data-open-modal]').forEach((btn) => {
-  btn.addEventListener('click', (e) => { e.preventDefault(); openModal(btn); });
+const sel = 'a[href], button:not([disabled]), textarea, input, [tabindex]:not([tabindex="-1"])';
+function getFocusable(){return [...dialog.querySelectorAll(sel)];}
+function openModal(t){lastTrigger=t;modalRoot.classList.remove('hidden');document.body.style.overflow='hidden';document.getElementById('frm-namn').focus();}
+function closeModal(){modalRoot.classList.add('hidden');document.body.style.overflow='';lastTrigger&&lastTrigger.focus();}
+document.querySelectorAll('[data-open-modal]').forEach(btn=>btn.addEventListener('click',e=>{e.preventDefault();openModal(btn);}));
+document.querySelectorAll('[data-close-modal]').forEach(btn=>btn.addEventListener('click',closeModal));
+document.addEventListener('keydown',e=>{
+  if(modalRoot.classList.contains('hidden'))return;
+  if(e.key==='Escape'){e.preventDefault();closeModal();return;}
+  if(e.key!=='Tab')return;
+  const nodes=getFocusable(); if(!nodes.length)return;
+  if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes.at(-1).focus();}
+  else if(!e.shiftKey&&document.activeElement===nodes.at(-1)){e.preventDefault();nodes[0].focus();}
 });
-document.querySelectorAll('[data-close-modal]').forEach((btn) => btn.addEventListener('click', closeModal));
-document.addEventListener('keydown', (e) => {
-  if (modalRoot.classList.contains('hidden')) return;
-  if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
-  if (e.key !== 'Tab') return;
-  const nodes = getFocusable();
-  if (!nodes.length) return;
-  const first = nodes[0];
-  const last = nodes[nodes.length - 1];
-  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-});
-form.addEventListener('submit', (e) => {
+document.getElementById('forfragan-form').addEventListener('submit',e=>{
   e.preventDefault();
-  const fd = new FormData(form);
-  const namn = fd.get('namn');
-  const tel = fd.get('telefon');
-  const msg = fd.get('meddelande');
-  const subject = encodeURIComponent('Förfrågan maskinverkstad från ' + namn);
-  const body = encodeURIComponent('Namn: ' + namn + '\nTelefon: ' + tel + '\n\nÄrende / Maskin:\n' + msg);
+  const fd=new FormData(e.currentTarget);
+  const s=encodeURIComponent('Förfrågan från '+fd.get('namn'));
+  const b=encodeURIComponent('Namn: '+fd.get('namn')+'\nTelefon: '+fd.get('telefon')+'\n\n'+fd.get('meddelande'));
   closeModal();
-  form.reset();
-  window.location.href = 'mailto:lidbema@gmail.com?subject=' + subject + '&body=' + body;
+  location.href='mailto:lidbema@gmail.com?subject='+s+'&body='+b;
 });
 </script>
 </body>
