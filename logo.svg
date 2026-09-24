@@ -1,22 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img">
-  <title>Lidbema AB</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" role="img" aria-labelledby="lidbemaLogo">
+  <title id="lidbemaLogo">Lidbema AB — 0670 101 10</title>
   <defs>
-    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4f6f8"/><stop offset="0.45" stop-color="#9aa3ad"/><stop offset="1" stop-color="#5c646c"/>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#cfd5db"/>
+      <stop offset="0.7" stop-color="#8b939c"/>
+      <stop offset="1" stop-color="#4e555c"/>
     </linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8a1111"/><stop offset="0.45" stop-color="#c1121f"/><stop offset="1" stop-color="#5a0b0b"/>
+    <linearGradient id="redbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e23b3b"/>
+      <stop offset="0.45" stop-color="#b51218"/>
+      <stop offset="1" stop-color="#6d0a0d"/>
     </linearGradient>
   </defs>
-  <g fill="url(#steel)" stroke="#2a2d31" stroke-width="3" stroke-linejoin="round">
-    <path d="M48 28 c18-18 46-18 64 0 l18 18 -22 22 c-8-8-20-8-28 0 l-8 8 22 22 c8-8 8-20 0-28 l22-22 18 18 c18 18 18 46 0 64 c-18 18-46 18-64 0 l-56-56 c-18-18-18-46 0-64z"/>
-    <circle cx="86" cy="66" r="10" fill="#111"/>
+  <g transform="translate(8,8) rotate(-28 70 70)">
+    <path fill="url(#chrome)" stroke="#1a1c1e" stroke-width="2.2" d="M42 18c22-16 54-12 70 10 6 8 8 14 8 22 0 10-4 18-12 26l-16 16-18-18 10-10c6-6 6-16 0-22-8-8-20-10-30-2l-12 10-18-18 18-14z"/>
+    <path fill="url(#chrome)" stroke="#1a1c1e" stroke-width="2.2" d="M86 92 l18 18 c8 8 10 20 4 30-8 14-28 18-42 8l-16-12 16-20 12 8c6 4 12 2 16-4 2-4 2-8-2-12z"/>
   </g>
-  <path d="M118 118 L548 118 L560 132 L548 146 L92 146 L80 132 Z" fill="url(#steel)" stroke="#2a2d31" stroke-width="2"/>
-  <rect x="132" y="112" width="390" height="40" rx="3" fill="url(#bar)"/>
-  <text x="327" y="140" text-anchor="middle" fill="#fff" font-family="Arial Black, Impact, sans-serif" font-size="24" letter-spacing="8">0670 101 10</text>
-  <rect x="546" y="114" width="28" height="28" rx="14" fill="url(#steel)" stroke="#2a2d31" stroke-width="2"/>
-  <circle cx="560" cy="128" r="6" fill="#111"/>
-  <text x="128" y="96" fill="#f4f4f5" font-family="Arial Black, Impact, sans-serif" font-size="64" font-weight="800" letter-spacing="2">LIDBEMA</text>
-  <text x="500" y="96" fill="#d4d4d8" font-family="Arial Black, Impact, sans-serif" font-size="28" font-weight="800">AB</text>
+  <text x="168" y="118" fill="#f4f4f5" font-family="Arial Black, Impact, sans-serif" font-size="72" font-weight="800">LIDBEMA</text>
+  <text x="612" y="78" fill="#e4e4e7" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="800">AB</text>
+  <path d="M176 148 L612 148 L628 170 L612 192 L148 192 L132 170 Z" fill="url(#redbar)" stroke="#3a0708" stroke-width="2"/>
+  <text x="380" y="180" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="28" letter-spacing="6">0670 101 10</text>
+  <circle cx="648" cy="170" r="26" fill="url(#chrome)" stroke="#1a1c1e" stroke-width="2.4"/>
+  <circle cx="648" cy="170" r="11" fill="#09090b"/>
 </svg>
