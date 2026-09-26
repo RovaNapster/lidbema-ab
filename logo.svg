@@ -7,10 +7,10 @@
       <stop offset="0.7" stop-color="#8b939c"/>
       <stop offset="1" stop-color="#4e555c"/>
     </linearGradient>
-    <linearGradient id="redbar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e23b3b"/>
-      <stop offset="0.45" stop-color="#b51218"/>
-      <stop offset="1" stop-color="#6d0a0d"/>
+    <linearGradient id="catbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD13B"/>
+      <stop offset="0.45" stop-color="#FFC000"/>
+      <stop offset="1" stop-color="#CC9A00"/>
     </linearGradient>
   </defs>
   <g transform="translate(8,8) rotate(-28 70 70)">
@@ -18,9 +18,9 @@
     <path fill="url(#chrome)" stroke="#1a1c1e" stroke-width="2.2" d="M86 92 l18 18 c8 8 10 20 4 30-8 14-28 18-42 8l-16-12 16-20 12 8c6 4 12 2 16-4 2-4 2-8-2-12z"/>
   </g>
   <text x="168" y="118" fill="#f4f4f5" font-family="Arial Black, Impact, sans-serif" font-size="72" font-weight="800">LIDBEMA</text>
-  <text x="612" y="78" fill="#e4e4e7" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="800">AB</text>
-  <path d="M176 148 L612 148 L628 170 L612 192 L148 192 L132 170 Z" fill="url(#redbar)" stroke="#3a0708" stroke-width="2"/>
-  <text x="380" y="180" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="28" letter-spacing="6">0670 101 10</text>
+  <text x="612" y="78" fill="#FFC000" font-family="Arial Black, Impact, sans-serif" font-size="26" font-weight="800">AB</text>
+  <path d="M176 148 L612 148 L628 170 L612 192 L148 192 L132 170 Z" fill="url(#catbar)" stroke="#111" stroke-width="2"/>
+  <text x="380" y="180" text-anchor="middle" fill="#000" font-family="Arial Black, Impact, sans-serif" font-size="28" letter-spacing="6" font-weight="900">0670 101 10</text>
   <circle cx="648" cy="170" r="26" fill="url(#chrome)" stroke="#1a1c1e" stroke-width="2.4"/>
   <circle cx="648" cy="170" r="11" fill="#09090b"/>
 </svg>
